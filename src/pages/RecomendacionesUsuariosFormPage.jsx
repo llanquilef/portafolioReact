@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { createR_Personales } from "../api/recomendacionapi"; 
+import { createR_Usuarios } from "../api/recomendacionapi"; 
 import { toast } from "react-hot-toast";
 
-export function RecomendacionesPersonalesFormPage() {
+export function RecomendacionesUsuariosFormPage() {
   const [nombre, setNombre] = useState("");
   const [autor, setAutor] = useState("");
   const [comentario, setComentario] = useState("");
@@ -22,9 +22,9 @@ export function RecomendacionesPersonalesFormPage() {
     formData.append("tipoMultimedia", tipoMultimedia);
 
     try {
-      await createR_Personales(formData); 
+      await createR_Usuarios(formData); 
       toast.success("Recomendación creada con éxito.");
-      navigate("/recomendaciones-personales"); 
+      navigate("/recomendacionesusuarios"); 
     } catch (error) {
       console.error("Error al crear la recomendación:", error);
       toast.error("Hubo un error al crear la recomendación.");

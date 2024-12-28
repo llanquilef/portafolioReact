@@ -24,6 +24,9 @@ import { Contacto } from './components/Contacto'
 import { RecomendacionesPersonalesPage } from "./pages/RecomendacionesPersonalesPage";
 import { RecomendacionesPersonalesFormPage } from './pages/RecomendacionesPersonalesFormPage';
 
+{/* Import Recomendaciones Personales*/}
+import { RecomendacionesUsuariosFormPage } from './pages/RecomendacionesUsuariosFormPage'
+import { RecomendacionesUsuariosPage } from './pages/RecomendacionesUsuariosPage'
 
 function App() {
   return (
@@ -38,8 +41,12 @@ function App() {
         <Route path="/Contacto" element={<Contacto />}></Route>       
 
         {/* Rutas Recomendaciones Personales */}
-        <Route path="/recomendaciones-personales" element={<RecomendacionesPersonalesPage />}></Route> 
-        <Route path="/recomendaciones-personales-crear" element={<RecomendacionesPersonalesFormPage />}></Route> 
+        <Route path="/recomendacionespersonales" element={<RecomendacionesPersonalesPage />}></Route> 
+        <Route path="/recomendacionespersonales-crear" element={<RecomendacionesPersonalesFormPage />}></Route> 
+
+        {/* Rutas Recomendaciones Usuarios */}
+        <Route path="/recomendacionesusuarios" element={<RecomendacionesUsuariosPage />}></Route> 
+        <Route path="/recomendacionesusuarios-crear" element={<RecomendacionesUsuariosFormPage />}></Route> 
 
 
         {/* Ruta por si el usuario busca una dirección no existente */}

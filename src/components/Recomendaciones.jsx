@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate} from 'react-router-dom'
 
 export function Recomendaciones() {
+  const navigate = useNavigate();
   return (
     <section className="py-20 bg-orange-100" id="habilidades">
       <div className="container max-w-4xl mx-auto">
@@ -28,7 +30,7 @@ export function Recomendaciones() {
         <div className="flex justify-center gap-4">
           <button
             className="bg-blue-500 mt-6 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
-            onClick={() => alert("Aquí irá tu funcionalidad")}
+            onClick={() => navigate("/recomendacionesusuarios-crear")}
           >
             Recomendar Multimedia
           </button>
@@ -38,7 +40,7 @@ export function Recomendaciones() {
         <div className="flex justify-center gap-6">
           <button
             className="bg-blue-500 mt-6 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
-            onClick={() => alert("Aquí irá tu funcionalidad")}
+            onClick={() => navigate("/recomendacionespersonales")}
           >
             Mis Recomendaciones
           </button>
