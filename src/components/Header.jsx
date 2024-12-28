@@ -2,35 +2,32 @@ import React from "react";
 import { Mail } from "lucide-react";
 import profileImage from '../assets/selfie2.jpg';
 
-
 export function Header() {
   return (
+    <header className="relative py-20 text-center animate-fade-up">
 
-    <header className="py-20 text-center animate-fade-up">
-
+      
+      {/* Imagen de Perfil */}
       <div className="flex justify-center mb-8">
+        <img
+          src={profileImage}
+          alt="Javier Rival Llanquilef"
+          className="w-25 max-h-64 rounded-full border-4 border-zinc-50"
+        />
+      </div>
 
-        {/* Imagen de Perfil */}
-  <img
-    src={profileImage}
-    alt="Javier Rival Llanquilef"
-    className="w-25 max-h-64 rounded-full border-4 border-zinc-50"
-  />
-
-</div>
       {/* Mi nombre */}
-    
       <h1 className="text-4xl md:text-6xl font-bold mb-4">
         Javier Rival Llanquilef
       </h1>
 
       {/* Institución / Carrera */}
-
       <p className="text-xl md:text-2xl text-gray-600 mb-8">
         Estudiante Egresado Inacap | Analista Programador
       </p>
-      <div className="flex justify-center gap-6">
 
+      {/* Iconos */}
+      <div className="flex justify-center gap-6">
         {/* Correo */}
         <a href="mailto:llanquilef.cl@gmail.com" className="text-zinc-950">
           <Mail className="w-6 h-6" />
@@ -52,8 +49,6 @@ export function Header() {
             <path d="M19 0h-14c-2.762 0-5 2.238-5 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.762-2.238-5-5-5zm-11.67 19h-3.33v-9h3.33v9zm-1.667-10.24c-1.048 0-1.9-.854-1.9-1.904s.852-1.904 1.9-1.904c1.048 0 1.9.854 1.9 1.904s-.852 1.904-1.9 1.904zm13.337 10.24h-3.33v-4.781c0-1.139-.021-2.605-1.586-2.605-1.586 0-1.83 1.241-1.83 2.526v4.86h-3.33v-9h3.195v1.23h.046c.445-.841 1.531-1.727 3.153-1.727 3.374 0 4 2.218 4 5.103v4.394z" />
           </svg>
         </a>
-
-        
       </div>
     </header>
   );

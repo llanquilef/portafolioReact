@@ -13,6 +13,7 @@ import { Header } from './components/Header';
 import { Educacion } from './components/Educacion'
 import { Toaster } from "react-hot-toast";
 import { Contacto } from './components/Contacto'
+import { Recomendaciones } from './components/Recomendaciones'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/AboutMe" element={<AboutMe />}></Route>
         <Route path="/Educacion" element={<Educacion />}></Route>       
         <Route path="/Contacto" element={<Contacto />}></Route>       
+        <Route path="/Contacto" element={<Recomendaciones />}></Route>       
 
 
         {/* Ruta por si el usuario busca una dirección no existente */}

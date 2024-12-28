@@ -4,6 +4,7 @@ import { AboutMe } from "./AboutMe";
 import { Habilidades } from "./Habilidades";
 import { Educacion } from './Educacion'
 import { Contacto } from './Contacto'
+import { Recomendaciones } from './Recomendaciones'
 
 
 export function Index() {
@@ -15,6 +16,7 @@ export function Index() {
         <Habilidades />
         <Educacion />
         <Contacto />
+        <Recomendaciones />
       </main>
     </div>
   );
