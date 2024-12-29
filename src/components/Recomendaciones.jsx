@@ -13,17 +13,12 @@ export function Recomendaciones() {
         {/* Párrafo Explicativo acerca de la sección de Recomendaciones Mutlimedia */}
         <p className="text-lg text-gray-700 mb-6 leading-relaxed text-center">
           Bienvenido a la sección de recomendaciones multimedia, donde puedes
-          explorar y compartir tus gustos conmigo y otros usuarios.
+          explorar y compartir tus gustos conmigo.
           <br />
           <br />
           Este sistema utiliza Django REST para gestionar todas las
-          funcionalidades CRUD, permitiéndote crear un usuario, agregar, editar
+          funcionalidades CRUD, permitiéndote crear, actualizar
           y eliminar tus propias recomendaciones.
-          <br />
-          <br />
-          Cada recomendación está asociada a un usuario único. Aunque puedes ver
-          las recomendaciones de otros usuarios, solo puedes gestionar las que
-          has creado en tu sesión.
         </p>
 
         {/* Botón Recomendaciones Usuarios */}

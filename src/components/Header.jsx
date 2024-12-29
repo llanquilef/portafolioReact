@@ -1,8 +1,13 @@
 import React from "react";
 import { Mail } from "lucide-react";
 import profileImage from '../assets/selfie2.jpg';
+import { toast } from "react-hot-toast";
 
 export function Header() {
+  const copyEmail = () => {
+    navigator.clipboard.writeText("llanquilef.cl@gmail.com"); 
+    toast.success("¡Correo copiado al portapapeles!"); 
+  }
   return (
     <header className="relative py-20 text-center animate-fade-up">
 
@@ -29,9 +34,12 @@ export function Header() {
       {/* Iconos */}
       <div className="flex justify-center gap-6">
         {/* Correo */}
-        <a href="mailto:llanquilef.cl@gmail.com" className="text-zinc-950">
+        <button
+          onClick={copyEmail}
+          className="text-zinc-950 focus:outline-none"
+        >
           <Mail className="w-6 h-6" />
-        </a>
+        </button>
 
         {/* GitHub */}
         <a href="https://github.com/llanquilef" className="text-zinc-950">

@@ -8,25 +8,26 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-{/* Import Componentes Página Principal*/}
-
-import { Index } from "./components/Index";
-import { AboutMe } from "./components/AboutMe";
-import { Header } from './components/Header';
-import { Educacion } from './components/Educacion'
+{/* Import Componentes Página Principal (Screen) */}
+import {Index} from "./components/Index";
+import {AboutMe} from "./components/AboutMe";
+import {Header} from './components/Header';
+import {Educacion} from './components/Educacion'
 
 {/* Import Toaster para las notificaciones al agregar, eliminar o actualizar una recomendación: personal o de usuario. */}
 
-import { Toaster } from "react-hot-toast";
-import { Contacto } from './components/Contacto'
+import {Toaster} from "react-hot-toast";
+import {Contacto} from './components/Contacto';
 
 {/* Import Recomendaciones Personales*/}
-import { RecomendacionesPersonalesPage } from "./pages/RecomendacionesPersonalesPage";
-import { RecomendacionesPersonalesFormPage } from './pages/RecomendacionesPersonalesFormPage';
+import {RecomendacionesPersonalesPage} from "./pages/RecomendacionesPersonalesPage";
+import {RecomendacionesPersonalesFormPage} from './pages/RecomendacionesPersonalesFormPage';
 
 {/* Import Recomendaciones Personales*/}
-import { RecomendacionesUsuariosFormPage } from './pages/RecomendacionesUsuariosFormPage'
-import { RecomendacionesUsuariosPage } from './pages/RecomendacionesUsuariosPage'
+import {RecomendacionesUsuariosFormPage}from './pages/RecomendacionesUsuariosFormPage'
+import {RecomendacionesUsuariosPage} from './pages/RecomendacionesUsuariosPage'
+
+{/* Import Rutas Protegidas */}
 
 function App() {
   return (
