@@ -13,7 +13,7 @@ export function AboutMe() {
           <div>
             {/* Párrafo 1 */}
 
-            <p className="text-lg leading-relaxed text-gray-700">
+            <p className="text-base leading-relaxed text-gray-700">
               Me gusta la programación porque me permite resolver problemas
               reales y crear herramientas útiles. Disfruto transformar ideas en
               productos que funcionan y aportan valor.
@@ -21,7 +21,7 @@ export function AboutMe() {
 
             {/* Párrafo 2 */}
 
-            <p className="text-lg leading-relaxed text-gray-700 mt-4">
+            <p className="text-base leading-relaxed text-gray-700 mt-4">
               Durante mi formación, trabajé en proyectos usando Python, Django,
               PostgreSQL, React y Tailwind CSS. Uno de mis favoritos fue un
               sistema de gestión de reservas, donde integré APIs RESTful para
@@ -30,7 +30,7 @@ export function AboutMe() {
 
             {/* Párrafo 3 */}
 
-            <p className="text-lg leading-relaxed text-gray-700 mt-4">
+            <p className="text-base leading-relaxed text-gray-700 mt-4">
               Para mí, programar es como resolver puzzles: un desafío constante
               que combina lógica y creatividad. Me motiva seguir aprendiendo y
               trabajando en soluciones que sean útiles para otros y para mí.

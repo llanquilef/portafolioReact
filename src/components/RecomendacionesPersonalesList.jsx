@@ -23,11 +23,11 @@ export function R_PersonalesList() {
       {/* Botón Inicio */}
       <a
         href="/index"
-        className="absolute top-12 right-20 bg-emerald-500 text-white px-4 py-2 rounded-2xl hover:bg-emerald-400 transition-all"
+        className="absolute top-4 right-6 bg-emerald-500 text-white px-4 py-2 rounded-2xl hover:bg-emerald-400 transition-all"
       >
         Inicio
       </a>
-      <h1 className="text-center text-4xl font-bold text-white mt-5">Mis Recomendaciones</h1>
+      <h1 className="text-center text-4xl font-bold text-white mt-10">Mis Recomendaciones</h1>
       <div className="grid grid-cols-1 ml-5 mt-12 justify-center text-emerald-200 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {recomendaciones.map(({ id, nombre, autor, comentario, añoPublicacion, tipoMultimedia }) => (
           <div

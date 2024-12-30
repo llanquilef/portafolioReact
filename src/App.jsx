@@ -6,6 +6,10 @@
 // directorios.
 // 4.- Ciclos poco complejos y más rápidos
 
+
+{/* Import Toaster para las notificaciones al agregar, eliminar o actualizar una recomendación: personal o de usuario. */}
+
+import { Toaster } from "react-hot-toast";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 {/* Import Componentes Página Principal (Screen) */}
@@ -14,9 +18,7 @@ import {AboutMe} from "./components/AboutMe";
 import {Header} from './components/Header';
 import {Educacion} from './components/Educacion'
 
-{/* Import Toaster para las notificaciones al agregar, eliminar o actualizar una recomendación: personal o de usuario. */}
 
-import {Toaster} from "react-hot-toast";
 import {Contacto} from './components/Contacto';
 
 {/* Import Recomendaciones Personales*/}
