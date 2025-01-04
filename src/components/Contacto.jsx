@@ -1,7 +1,7 @@
 import React from 'react'
 import { Mail, Phone } from "lucide-react";
 
-
+{/* Contacto/ Contact */}
 export function Contacto() {
   return (
     <section className="py-20 bg-amber-200" id="contact">

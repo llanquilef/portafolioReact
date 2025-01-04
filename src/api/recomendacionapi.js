@@ -1,7 +1,8 @@
 import axios from "axios";
 
+// PERSONAL RECOMENDATION / RECOMENDACIÓN PERSONAL 
 
-// Recomendación Personal
+// GET ALL PERSONAL RECOMENDATION / OBTENER TODAS LAS RECOMENDACIONES PERSONALES
 {
   /* Esta función obtiene todas las recomendaciones que he realizado para que me conozcan mejor, utilizando la API REST de Django. */
 }
@@ -13,6 +14,7 @@ export const getAllRecomendacionesPersonales = () => {
     });
 };
 
+// CREAR/CREATE PERSONAL RECOMENDATION / RECOMENDACIÓN PERSONAL
 
 {
   /* Esta función es para poder crear una recomendación personal conectada a la API REST de Django.*/
@@ -25,7 +27,9 @@ export const createR_Personales = (r_personales) => {
 };
 
 
-// Recomendación Usuario 
+// RECOMENDACIÓN USUARIO / USER RECOMENDATION 
+
+// GET ALL USER RECOMENDATION / OBTENER TODAS LAS RECOMENDACIONES USUARIOS
 {
   /* Esta función obtiene todas las recomendaciones que los usuarios han realizado, utilizando la API REST de Django y Autenticación de Usuario para su implementación.*/
 }
@@ -37,6 +41,7 @@ export const getAllRecomendacionesUsuarios = () => {
     });
 };
 
+// CREAR/CREATE USER RECOMENDATION / RECOMENDACIÓN USUARIO
 
 {
   /* Esta función es para que el usuario pueda crear y dejarme una recomendación multimedia, todo esto conectado a la API REST de Django.*/
@@ -48,7 +53,7 @@ export const createR_Usuarios = (r_usuarios) => {
   );
 };
 
-
+// ELIMINAR/DELETE USER RECOMENDATION / RECOMENDACIÓN USUARIO
 {
   /* Esta función es para que el usuario pueda eliminar una o algunas de las recomendaciones que pudo haber realizado conectado a la API REST de Django.*/
 }
@@ -62,7 +67,7 @@ export const deleteRecomendacionUsuario = async (id) => {
   }
 };
 
-
+// ACTUALIZAR/UPDATE USER RECOMENDATION / RECOMENDACIÓN USUARIO
 {
   /* Esta función es para que el usuario pueda actualizar una, algunas o todas las recomendaciones que pudo haber realizado conectado a la API REST de Django.*/
 }

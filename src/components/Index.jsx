@@ -6,7 +6,7 @@ import { Educacion } from './Educacion'
 import { Contacto } from './Contacto'
 import { Recomendaciones } from './Recomendaciones'
 
-
+{/* INDEX */}
 export function Index() {
   return (
     <div className="min-h-screen bg-white">

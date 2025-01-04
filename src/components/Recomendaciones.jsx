@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate} from 'react-router-dom'
 
+
+{/* SECCIÓN RECOMENDACIONES / RECOMENDATION SECTION */}
 export function Recomendaciones() {
   const navigate = useNavigate();
   return (

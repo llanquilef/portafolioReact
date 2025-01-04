@@ -1,7 +1,9 @@
 import React from "react";
+
+{/* EDUCACIÓN/ EDUCATION */}
 export function Educacion() {
 
-  // Se crea una constante que luego se mapea a la variable ed en este caso para mostrar dónde he estudiado, evitando el repetir código que puedo escribir una sola vez.
+  // Se crea una constante que luego se mapea a la variable, en este caso para mostrar dónde he estudiado evitando el repetir código que puedo escribir una sola vez.
 
   const educacion = [
     {

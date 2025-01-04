@@ -1,5 +1,6 @@
 import React from "react";
 
+{/* SOBRE MÍ / ABOUT ME */}
 export function AboutMe() {
   return (
     <section className="py-20 bg-purple-200" id="about">

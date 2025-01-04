@@ -6,7 +6,11 @@ import {
 } from "../api/recomendacionapi";
 import { toast } from "react-hot-toast";
 
+
+{/* USERS LIST RECOMENDATIONS / LISTADO RECOMEDACIONES USUARIOS */}
 export function R_UsuariosList() {
+
+  
   const [recomendaciones, setRecomendaciones] = useState([]);
   const [editandoId, setEditandoId] = useState(null);
   const [datosEditados, setDatosEditados] = useState({
@@ -29,6 +33,12 @@ export function R_UsuariosList() {
 
     fetchRecomendaciones();
   }, []);
+
+  {/* // CONST DELETE USER RECOMENDATION (handleDelete) / ELIMINAR RECOMENDACIÓN USUARIO (handleDelete) 
+    Se crea una constante que llama a la funcion deleteRecomendacionUsuario 
+    que contiene la lógica para eliminar la recomendación hecha por un usuario 
+    dentro de la página. */}
+
   const handleDelete = async (id) => {
     if (
       window.confirm("¿Estás seguro de que deseas eliminar esta recomendación?")
@@ -48,10 +58,17 @@ export function R_UsuariosList() {
       }
     }
   };
+
+  { }
   const handleEditClick = (recomendacion) => {
     setEditandoId(recomendacion.id);
     setDatosEditados({ ...recomendacion });
   };
+ 
+  {/* // CONST UPDATE USER RECOMENDATION (handleUpdate) / ELIMINAR RECOMENDACIÓN USUARIO (handleUpdate)  
+    Se crea una constante que llama a la funcion updateRecomendacion
+    que contiene la lógica para que el usuario pueda actualizar la información 
+    acerca de la recomendación realizada dentro de la página. */}
 
   const handleUpdate = async (id) => {
     try {

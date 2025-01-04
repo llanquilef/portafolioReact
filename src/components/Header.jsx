@@ -3,6 +3,7 @@ import { Mail } from "lucide-react";
 import profileImage from '../assets/selfie2.jpg';
 import { toast } from "react-hot-toast";
 
+{ /* HEADER */}
 export function Header() {
   const copyEmail = () => {
     navigator.clipboard.writeText("llanquilef.cl@gmail.com"); 
@@ -12,7 +13,7 @@ export function Header() {
     <header className="relative py-20 text-center animate-fade-up">
 
       
-      {/* Imagen de Perfil */}
+      {/* Imagen de Perfil / Profile Image */}
       <div className="flex justify-center mb-8">
         <img
           src={profileImage}
@@ -21,19 +22,20 @@ export function Header() {
         />
       </div>
 
-      {/* Mi nombre */}
+      {/* Mi nombre / My name */}
       <h1 className="text-4xl md:text-6xl font-bold mb-4">
         Javier Rival Llanquilef
       </h1>
 
-      {/* Institución / Carrera */}
+      {/* Institución & Carrera / School & Carreer */}
       <p className="text-xl md:text-2xl text-gray-600 mb-8">
         Estudiante Egresado Inacap | Analista Programador
       </p>
 
-      {/* Iconos */}
+      {/* Iconos / Icons */}
       <div className="flex justify-center gap-6">
-        {/* Correo */}
+        
+        {/* Botón Correo / Button Mail */}
         <button
           onClick={copyEmail}
           className="text-zinc-950 focus:outline-none"
