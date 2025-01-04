@@ -37,7 +37,7 @@ function App() {
       <Routes>
 
          {/* Rutas Principales */}
-        <Route path="/index" element={<Index />}></Route>
+        <Route path="/" element={<Index />}></Route>
         <Route path="/Header" element={<Header />}></Route>
         <Route path="/AboutMe" element={<AboutMe />}></Route>
         <Route path="/Educacion" element={<Educacion />}></Route>       

@@ -98,7 +98,7 @@ export function R_UsuariosList() {
     <div className="p-6 font-sans bg-black min-h-screen">
       <div className="absolute top-4 right-6 flex space-x-4">
         <a
-          href="/index"
+          href="/"
           className="bg-emerald-500 text-white px-4 py-2 rounded-2xl hover:bg-emerald-400 transition-all"
         >
           Inicio

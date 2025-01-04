@@ -22,7 +22,7 @@ export function R_PersonalesList() {
     <div className="p-6 font-sans bg-black min-h-screen">
       
       {/* Botón Inicio */}
-      <a href="/index" className="absolute top-4 right-6 bg-emerald-500 text-white px-4 py-2 rounded-2xl hover:bg-emerald-400 transition-all">Inicio</a>
+      <a href="/" className="absolute top-4 right-6 bg-emerald-500 text-white px-4 py-2 rounded-2xl hover:bg-emerald-400 transition-all">Inicio</a>
 
       {/* Título / Title */}
       <h1 className="text-center text-4xl font-bold text-white mt-10">Mis Recomendaciones</h1>
