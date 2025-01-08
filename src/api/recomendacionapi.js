@@ -8,7 +8,7 @@ import axios from "axios";
 }
 export const getAllRecomendacionesPersonales = () => {
   return axios
-    .get("http://127.0.0.1:8000/api/v1/recomendacionespersonales/")
+    .get("https://portafolio-8zz7.onrender.com/api/v1/recomendacionespersonales/")
     .then((response) => {
       return response.data;
     });
