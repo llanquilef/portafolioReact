@@ -21,7 +21,7 @@ export const getAllRecomendacionesPersonales = () => {
 }
 export const createR_Personales = (r_personales) => {
   return axios.post(
-    "http://localhost:8000/api/v1/recomendacionespersonales/",
+    "https://portafolio-8zz7.onrender.com/api/v1/recomendacionespersonales/",
     r_personales
   );
 };
@@ -35,7 +35,7 @@ export const createR_Personales = (r_personales) => {
 }
 export const getAllRecomendacionesUsuarios = () => {
   return axios
-    .get("http://127.0.0.1:8000/api/v1/recomendacionesusuarios/")
+    .get("https://portafolio-8zz7.onrender.com/api/v1/recomendacionesusuarios/")
     .then((response) => {
       return response.data;
     });
@@ -48,7 +48,7 @@ export const getAllRecomendacionesUsuarios = () => {
 }
 export const createR_Usuarios = (r_usuarios) => {
   return axios.post(
-    "http://localhost:8000/api/v1/recomendacionesusuarios/",
+    "https://portafolio-8zz7.onrender.com/api/v1/recomendacionesusuarios/",
     r_usuarios
   );
 };
@@ -59,7 +59,7 @@ export const createR_Usuarios = (r_usuarios) => {
 }
 export const deleteRecomendacionUsuario = async (id) => {
   try {
-    const response = await axios.delete(`http://localhost:8000/api/v1/recomendacionesusuarios/${id}/`);
+    const response = await axios.delete(`https://portafolio-8zz7.onrender.com/api/v1/recomendacionesusuarios/${id}/`);
     return response;
   } catch (error) {
     console.error("Error al eliminar la recomendacion:", error.response?.data || error.message);
@@ -74,7 +74,7 @@ export const deleteRecomendacionUsuario = async (id) => {
 export const updateRecomendacion = async (id, updatedRecomendacion) => {
   try {
     const response = await axios.put(
-      `http://localhost:8000/api/v1/recomendacionesusuarios/${id}/`,
+      `https://portafolio-8zz7.onrender.com/api/v1/recomendacionesusuarios/${id}/`,
     updatedRecomendacion
     );
     return response.data; // Validar que se devuelvan los datos correctos
