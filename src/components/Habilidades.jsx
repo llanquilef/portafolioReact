@@ -15,7 +15,7 @@ export function Habilidades() {
     <section className="py-20 bg-purple-100" id="habilidades">
       
         {/* Container HABILIDADES / Container SKILLS */}
-      <div className="container max-w-4xl mx-auto">
+      <div className="container max-w-xl mx-auto">
 
         {/* Título HABILIDADES / Title SKILLS */}
         <h2 className="text-3xl font-bold mb-8 text-center text-purple-800">Habilidades</h2>

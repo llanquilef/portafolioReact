@@ -4,7 +4,7 @@ import React from "react";
 export function AboutMe() {
   return (
     <section className="py-20 bg-purple-200" id="about">
-      <div className="container max-w-4xl mx-auto text-center">
+      <div className="container max-w-2xl mx-auto text-center">
         
         {/* Título Acerca de Mí */}
 

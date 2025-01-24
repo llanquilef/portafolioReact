@@ -7,7 +7,7 @@ export function Recomendaciones() {
   const navigate = useNavigate();
   return (
     <section className="py-20 bg-orange-100" id="habilidades">
-      <div className="container max-w-4xl mx-auto">
+      <div className="container max-w-2xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center text-black">
           Recomendaciones
         </h2>

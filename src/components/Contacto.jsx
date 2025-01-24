@@ -5,7 +5,7 @@ import { Mail, Phone } from "lucide-react";
 export function Contacto() {
   return (
     <section className="py-20 bg-amber-200" id="contact">
-      <div className="container max-w-4xl mx-auto">
+      <div className="container max-w-2xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center">Contacto</h2>
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <div className="space-y-6">

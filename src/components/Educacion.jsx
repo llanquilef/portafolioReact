@@ -25,7 +25,7 @@ export function Educacion() {
     <section className="py-20 bg-slate-300" id="educacion">
 
         {/* Container Educación*/}
-      <div className="container max-w-4xl mx-auto"> 
+      <div className="container max-w-2xl mx-auto"> 
 
         {/* Título Container*/}
         <h2 className="text-3xl font-bold mb-8 text-center">Educación</h2>
